@@ -1,5 +1,3 @@
-import promoVideo from "../assets/promo-video-small.mp4";
-
 function Promo() {
   return (
     <div className="promo" id="promo">
@@ -12,7 +10,7 @@ function Promo() {
           muted="muted"
           playsinline=""
         >
-          <source data-v-325b2118="" src={promoVideo} />
+          <source data-v-325b2118="" src="/assets/promo-video-small.mp4" />
         </video>
         <button>
           <svg

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   EmailIcon,
   LinkedInIcon,
@@ -8,12 +7,16 @@ import {
   TwitterIcon,
 } from "./icons";
 import FooterIcon from "./FooterIcon";
+import Subscribe from "./Subscribe";
 
-function Footer() {
+import styles from "@/styles/Footer.module.css";
+
+export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-text">Follow us on social media</div>
-      <div className="footer-icons">
+    <footer className={styles.footer}>
+      <Subscribe />
+      <div>Follow us on social media</div>
+      <div className={styles.icons}>
         <FooterIcon tip="Email">
           <EmailIcon />
         </FooterIcon>
@@ -33,7 +36,7 @@ function Footer() {
           <YouTubeIcon />
         </FooterIcon>
       </div>
-      <div class="footer-copyright">
+      <div className={styles.copyright}>
         © Copyright 2023 <strong>A2SV Foundation</strong>. All rights reserved.
         <a href="/privacy-policy">Privacy Policy</a>|
         <a href="/cookie-policy">Cookie Policy</a>
@@ -41,5 +44,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

@@ -1,7 +1,14 @@
-export default function Home() {
+import Footer from "@/components/Footer";
+import Main from "@/components/Main";
+import Promo from "@/components/Promo";
+
+function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      {/* <Promo />
+      <Main /> */}
     </>
   );
 }
+
+export default App;

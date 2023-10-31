@@ -1,4 +1,4 @@
-import Subscribe from "./Subscribe";
+import Subscribe from "./Footer/Subscribe";
 import Achievements from "./Achievements";
 
 function Main() {

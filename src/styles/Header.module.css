@@ -1,4 +1,4 @@
-nav {
+.nav {
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -12,8 +12,7 @@ nav {
     font-size: 14px;
 }
 
-
-nav>div {
+.nav>div {
     display: flex;
 }
 

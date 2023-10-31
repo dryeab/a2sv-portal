@@ -1,24 +1,19 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import TeamsDropdown from "./TeamsDropdown";
+
+import TeamsStyles from "@/styles/Teams.module.css";
+import HeaderStyles from "@/styles/Header.module.css";
 
 function Teams() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleDropdownOpen = () => {
-    setIsDropdownOpen(true);
-  };
-
-  const handleDropdownClose = () => {
-    setIsDropdownOpen(false);
-  };
-
   return (
     <div
-      className="teams navtab"
-      onMouseEnter={handleDropdownOpen}
-      onMouseLeave={handleDropdownClose}
+      className={`${TeamsStyles.teams} ${HeaderStyles.navtab}`}
+      onMouseEnter={() => setIsDropdownOpen(true)}
+      onMouseLeave={() => setIsDropdownOpen(false)}
     >
-      <div className="navtab-text teams-text">
+      <div className={HeaderStyles["navtab-text"]}>
         <div className="">Teams</div>
         <div>
           <svg
