@@ -1,0 +1,9 @@
+import "./index.css";
+import "./App.css";
+import "./Header.css";
+import "./Promo.css";
+import "./Teams.css";
+import "./Main.css";
+import "./Footer.css";
+import "./Subscribe.css";
+import "./Achievements.css";

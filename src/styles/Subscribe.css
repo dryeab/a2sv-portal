@@ -1,0 +1,60 @@
+.subscribe {
+    background-image: linear-gradient(to right, #2C3B8C, #316DF6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.subscribe {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.subscribe div {
+    margin-top: 10px;
+}
+
+.subscribe input:not([type="checkbox"]) {
+    display: block;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: #efeaea;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 500px;
+}
+
+.subscribe [type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.subscribe label {
+    font-size: 12px;
+    font-weight: 100;
+    color: rgb(225, 219, 219);
+}
+
+.subscribe button {
+    padding: 10px;
+    background-color: #F5A402;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    min-width: 500px;
+    color: white;
+}
+
+.subscribe button:hover {
+    cursor: pointer;
+}
