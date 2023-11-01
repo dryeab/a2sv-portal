@@ -1,6 +1,8 @@
 import Achievement from "./Achievement";
 import AchievementBar from "./AchievementBar";
 
+import styles from "@/styles/Achievements.module.css";
+
 let turn = true;
 
 const COLORS = {
@@ -11,12 +13,12 @@ const COLORS = {
   green: "#00e676",
 };
 
-function Achievements() {
+export default function Achievements() {
   return (
-    <div className="achievement-whole-wrapper">
-      <div className="achievements-header">Achievements</div>
-      <div className="achievement-wrapper">
-        <div className="achievements">
+    <div className={styles["achievement-whole-wrapper"]}>
+      <div className={styles["achievements-header"]}>Achievements</div>
+      <div className={styles["achievement-wrapper"]}>
+        <div className={styles.achievements}>
           <Achievement
             body="We started the fourth group training and welcomed 207 students."
             time="December, 2022"
@@ -109,5 +111,3 @@ November, 2019
     </div>
   );
 }
-
-export default Achievements;

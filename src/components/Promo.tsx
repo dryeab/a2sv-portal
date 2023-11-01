@@ -1,8 +1,11 @@
-function Promo() {
+import styles from "@/styles/Promo.module.css";
+
+export default function Promo() {
   return (
-    <div className="promo" id="promo">
-      <div className="video-container">
+    <div className={styles.promo} id="promo">
+      <div>
         <video
+          className={styles.video}
           data-v-325b2118=""
           id="videoBG"
           autoplay="autoplay"
@@ -26,5 +29,3 @@ function Promo() {
     </div>
   );
 }
-
-export default Promo;

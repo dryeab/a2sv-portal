@@ -1,13 +1,11 @@
-import Subscribe from "./Footer/Subscribe";
 import Achievements from "./Achievements";
 
-function Main() {
+import styles from "@/styles/Main.module.css";
+
+export default function Main() {
   return (
-    <div className="main">
+    <div className={styles.main}>
       <Achievements />
-      <Subscribe />
     </div>
   );
 }
-
-export default Main;

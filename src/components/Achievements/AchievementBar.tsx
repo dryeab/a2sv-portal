@@ -1,8 +1,8 @@
-import React from "react";
+import styles from "@/styles/Achievements.module.css";
 
-function AchievementBar({ from, to, height }) {
+export default function AchievementBar() {
   return (
-    <div className="achievement-bar">
+    <div className={styles["achievement-bar"]}>
       <svg data-v-325b2118="" viewBox="0 0 300 419.5">
         <defs>
           <linearGradient
@@ -67,5 +67,3 @@ function AchievementBar({ from, to, height }) {
     </div>
   );
 }
-
-export default AchievementBar;
