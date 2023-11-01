@@ -60,7 +60,7 @@ export default function AchievementBar() {
             70%
           </text>
         </g>
-        <g clip-path="url(#sparkline-bar-59-clip)" fill="url(#59)">
+        <g clipPath="url(#sparkline-bar-59-clip)" fill="url(#59)">
           <rect x="0" y="0" width="300" height="400"></rect>
         </g>
       </svg>
